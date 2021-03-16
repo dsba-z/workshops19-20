@@ -17,4 +17,4 @@ add_executable(problem1_classes
     problem1_classes/main.cpp
     problem1_classes/polarcoordinate.cpp
     problem1_classes/polarcoordinate.h)
-add_executable(problem2_static  problem2_static/main.cpp)
+#add_executable(problem2_static  problem2_static/main.cpp)
