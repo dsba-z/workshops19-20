@@ -44,7 +44,7 @@ bool testAddition()
 
 bool testSubtractionConst(const PolarCoordinate& a, const PolarCoordinate& b, double rad, double ang)
 {
-    PolarCoordinate c = a + b;
+    PolarCoordinate c = a - b;
     return checkFields(c, rad, ang);
 }
 
@@ -52,7 +52,7 @@ bool testSubtraction()
 {
     PolarCoordinate a(10, 0);
     PolarCoordinate b(10, M_PI_2);
-    return testSubtractionConst(a, b, 10*std::sqrt(2), M_PI_4 + M_PI_2);
+    return testSubtractionConst(a, b, 10*std::sqrt(2), -M_PI_4);
 }
 
 
